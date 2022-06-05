@@ -1,5 +1,3 @@
-from tkinter import E
-
 
 list1 =[]
 print('enter how many elements do you want to add to list:')
