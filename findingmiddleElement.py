@@ -9,8 +9,6 @@ k = int(input())
 
 startindex= (len(list1)//2)-(k//2)
 endindex = (len(list1)//2)+(k//2)
-print(startindex)
-print(endindex)
 
 result =[]
 
