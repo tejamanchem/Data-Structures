@@ -41,6 +41,4 @@ llist.push(2)
 llist.push(3)
 
 llist.printMiddle()
-# code has been contributed by - Yogesh Joshi
-
-           
+# code has been contributed by - Teja Manchem
