@@ -34,11 +34,10 @@ class LinkedList:
 		
 		print(temp.data)	
 		
-# Driver code
+
 llist = LinkedList()
 llist.push(1)
 llist.push(2)
 llist.push(3)
 
 llist.printMiddle()
-# code has been contributed by - Teja Manchem
