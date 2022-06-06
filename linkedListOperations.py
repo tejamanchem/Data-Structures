@@ -1,4 +1,4 @@
-#class for creating linked list
+
 class Node:
 
     def __init__(self,item):
