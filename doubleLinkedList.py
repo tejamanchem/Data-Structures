@@ -7,7 +7,7 @@ class Node:
         self.next=None
 
     
-class LinkedList:
+class DoubleLinkedList:
 
     def __init__(self):
         self.head=None
@@ -41,7 +41,7 @@ class LinkedList:
                 print()
 
 
-Nodeobj = LinkedList()
+Nodeobj = DoubleLinkedList()
 
 Nodeobj.append(1)
 Nodeobj.append(2)
