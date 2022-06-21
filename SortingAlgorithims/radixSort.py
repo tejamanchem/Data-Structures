@@ -13,7 +13,7 @@ def countSort(arr,pos):
         count[j]+=count[j-1]
 
 
-    k=size-1
+    k=size-1 
     while k>=0:
         index = arr[k]//pos
         output[count[index%10]-1]=arr[k]
