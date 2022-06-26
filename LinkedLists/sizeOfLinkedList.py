@@ -37,6 +37,8 @@ class LinkedList:
             print(temp.data,end=' ')
             temp = temp.next
 
+        print('')
+
     def countOfLinkedList(self):
 
         if self.head is None:

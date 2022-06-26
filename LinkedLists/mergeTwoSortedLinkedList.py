@@ -33,10 +33,12 @@ class LinkedList:
             return
         
         temp = self.head
-        print('')
+        
         while temp:
             print(temp.data,end=' ')
             temp = temp.next
+
+        print('')
 
 
 def mergeLinkedList(headA,headB):

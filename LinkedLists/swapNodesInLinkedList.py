@@ -1,5 +1,3 @@
-from hashlib import new
-
 
 class Node:
 
@@ -66,6 +64,8 @@ class LinkedList:
         while(temp):
             print(temp.data,end=' ')
             temp = temp.next
+
+        print('')
 
 list4 = LinkedList()
 list4.pushNode(1)

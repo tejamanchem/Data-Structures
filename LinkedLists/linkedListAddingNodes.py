@@ -67,6 +67,8 @@ class LinkedList:
             print(temp.data,end=' ')
             temp=temp.next
 
+        print('')
+
 linkedList1= LinkedList()
 linkedList1.addingFirst(1)
 linkedList1.appendNode(2)

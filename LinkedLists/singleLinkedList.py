@@ -1,5 +1,3 @@
-from tkinter.tix import NoteBook
-
 
 class Node:
     def __init__(self,data):

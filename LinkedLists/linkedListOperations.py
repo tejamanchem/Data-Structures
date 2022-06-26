@@ -109,6 +109,8 @@ class LinkedList:
             print(str(temp.data) + " ", end="")
             temp = temp.next
 
+        print('')
+
 
 if __name__ == '__main__':
 
@@ -126,7 +128,6 @@ if __name__ == '__main__':
     llist.deleteNode(3)
     llist.printList()
 
-    print()
     item_to_find = 3
     if llist.search(item_to_find):
         print(str(item_to_find) + " is found")
