@@ -1,11 +1,12 @@
 
+
 class Node:
 
     def __init__(self,data):
         self.data = data
         self.next = None
 
-class LinkedList:
+class LinkedList1:
 
     def __init__(self):
         self.head = None
@@ -25,6 +26,10 @@ class LinkedList:
         last.next = newNode
 
     def printLinkedList(self):
+
+        if self.head is None:
+            print('no elements in the linked list')
+            return
         
         temp = self.head 
 
@@ -149,13 +154,13 @@ def mergeLinkedList(headA,headB):
 
     
 
-l1 = LinkedList()
+l1 = LinkedList1()
 l1.appendNode(4)
 l1.appendNode(1)
 l1.appendNode(3)
 l1.appendNode(2)
 
-l2 = LinkedList()
+l2 = LinkedList1()
 l2.appendNode(9)
 l2.appendNode(6)
 l2.appendNode(7)
