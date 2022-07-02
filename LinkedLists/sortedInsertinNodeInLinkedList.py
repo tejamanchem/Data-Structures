@@ -1,4 +1,4 @@
-from platform import node
+
 from findMergePointOfTwoLinkedLists import LinkedList1
 
 class Node:
