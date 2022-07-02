@@ -35,7 +35,7 @@ class LinkedList:
         temp = self.head
         
         while temp:
-            print(temp.data,end=' ')
+            print(temp.data,end='->')
             temp = temp.next
 
         print('')
@@ -76,12 +76,20 @@ list2 = LinkedList()
 list1.insertAtEnd(5)
 list1.insertAtEnd(10)
 list1.insertAtEnd(15)
+list1.insertAtEnd(1)
+list1.insertAtEnd(2)
+list1.insertAtEnd(3)
+list1.insertAtEnd(4)
 
 list1.printLinkedList()
 
 list2.insertAtEnd(2)
 list2.insertAtEnd(3)
 list2.insertAtEnd(20)
+list2.insertAtEnd(9)
+list2.insertAtEnd(8)
+list2.insertAtEnd(7)
+list2.insertAtEnd(6)
 
 list2.printLinkedList()
 
