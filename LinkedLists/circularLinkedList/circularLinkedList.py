@@ -22,6 +22,8 @@ class CircularLinkedList:
             self.lastNode = self.lastNode.next
             self.lastNode.next = self.head
 
+   
+
     def display(self):
 
         current = self.head
