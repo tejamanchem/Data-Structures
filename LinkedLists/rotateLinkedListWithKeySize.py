@@ -61,6 +61,26 @@ class LinkedList:
 
         kThNode.next = None
 
+    def rotateLinkedListDyanmicTime(self,k):
+
+        if k is None:
+            return
+
+        current = self.head
+
+        while current.next != None:
+            current = current.next
+
+        current.next =self.head
+        current = self.head
+
+        for i in range(k-1):
+            current = current.next
+
+        self.head = current.next
+        current.next = None
+        
+
        
 list1 = LinkedList()
 list1.pushNode(60)
@@ -73,3 +93,6 @@ print('linked list is')
 list1.printLinkedList()
 list1.rotateList(4)
 list1.printLinkedList()
+list1.rotateLinkedListDyanmicTime(3)
+list1.printLinkedList()
+
