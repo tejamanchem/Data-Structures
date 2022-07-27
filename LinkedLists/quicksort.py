@@ -20,9 +20,7 @@ class LinkedList:
         while (cur != None and cur != end):
             if (cur.data < end.data):
                 pivot = start
-                start.data, cur.data = cur.data,start.data
-                self.printList()
-                
+                start.data, cur.data = cur.data,start.data  
                 start = start.next
             cur = cur.next
         start.data,end.data = end.data, start.data
