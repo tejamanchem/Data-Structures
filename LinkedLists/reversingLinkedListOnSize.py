@@ -35,13 +35,34 @@ class LinkedList:
             currentNode.next = prevNode
             prevNode = currentNode
             currentNode = nextNode
-            count+=1
+            count+=1                       
 
         if nextNode is not None:
             h.next =  self.reverseLinkedList(nextNode,k)
         
 
         return prevNode
+
+    def reverseLinkedListWithSpecifiedSize(self,head1,size):
+        if size is None:
+            return head1
+        if head1 is None:
+            return
+
+        temp = head1
+        prev = None
+        count = 0
+        while temp is not None and count <size:
+            nextNode = temp.next
+            temp.next = prev
+            prev = temp
+            temp = nextNode
+            count+=1
+
+        head1.next = temp
+        self.head = prev
+        return prev
+
 
     def printLinkedList(self):
 
@@ -71,4 +92,16 @@ li.printLinkedList()
 li.head=li.reverseLinkedList(li.head,3)
 li.printLinkedList()
 
+l2 = LinkedList()
+l2.pushNode(70)
+l2.pushNode(60)
+l2.pushNode(50)
+l2.pushNode(40)
+l2.pushNode(30)
+l2.pushNode(20)
+l2.pushNode(10)
+print('Second Linked List')
+l2.printLinkedList()
+l2.head = l2.reverseLinkedListWithSpecifiedSize(l2.head,3)
+l2.printLinkedList()
     
