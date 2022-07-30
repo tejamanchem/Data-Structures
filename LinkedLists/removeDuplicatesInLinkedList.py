@@ -1,5 +1,3 @@
-from platform import node
-
 
 class Node:
 
@@ -77,6 +75,11 @@ class LinkedList:
    
 l1 = LinkedList()
 l1.insertNodeAtEnd(1)
+l1.insertNodeAtEnd(1)
+l1.insertNodeAtEnd(1)
+l1.insertNodeAtEnd(2)
+l1.insertNodeAtEnd(2)
+l1.insertNodeAtEnd(2)
 l1.insertNodeAtEnd(2)
 l1.insertNodeAtEnd(2)
 l1.insertNodeAtEnd(3)
@@ -93,3 +96,13 @@ l1.removeDuplicates(l1.head)
 l1.printLinkedList()
 l1.removeDups()
 l1.printLinkedList()
+
+
+l2= LinkedList()
+l2.insertNodeAtEnd(5)
+l2.insertNodeAtEnd(2)
+l2.insertNodeAtEnd(2)
+l2.insertNodeAtEnd(4)
+l2.printLinkedList()
+l2.removeDups()
+l2.printLinkedList()
