@@ -12,10 +12,11 @@ class LinkedList:
         node = Node(data)
 
         if self.head is None:
-            return
-        temp = self.head
-        self.head = node
-        node.next = temp
+            self.head = node
+        temp =self.head 
+        while temp.next:
+            temp=temp.next
+        temp.next = node
     
     def printl(self):
         current = self.head
