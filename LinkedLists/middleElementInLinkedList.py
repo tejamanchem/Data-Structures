@@ -24,11 +24,18 @@ class LinkedList:
 			self.head = self.head.next
 			count += 1
 		print(temp.data)	
+	
+	
+				
 		
 
 llist = LinkedList()
 llist.push(1)
 llist.push(2)
+llist.push(6)
+llist.push(1)
 llist.push(3)
+llist.push(2)
+
 
 llist.printMiddle()
