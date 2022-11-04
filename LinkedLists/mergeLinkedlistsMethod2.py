@@ -32,6 +32,7 @@ class LinkedList:
 
         print('')
 
+
     def mergeLinkedList(self,list1,list2):
         print(list1.data)
         
@@ -79,10 +80,12 @@ l1.pushNode(3)
 l1.pushNode(2)
 l1.pushNode(1)
 
+l2.pushNode(2)
 l2.pushNode(6)
 l2.pushNode(5)
 l2.pushNode(9)
 l2.pushNode(7)
+l2.pushNode(1)
 
 print('the linked lists are')
 l1.printLinkedList()
